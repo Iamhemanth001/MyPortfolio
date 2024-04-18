@@ -1,0 +1,58 @@
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js" integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    var typed = new Typed('#element', {
+      strings: ['AI-ML Engineer','Programmer','MERN Developer'],
+      typeSpeed: 75,
+    smartBackspace: true
+    });
+
+</script>
+<script>
+
+const elements = document.querySelectorAll(".work-box,.profile-head,.bttn,footer,hr,nav,.skill-box img,.project-img,.project-box,.social-media-img,.box-2 img");
+
+setInterval((ele)=>{
+  elements.forEach(element => {
+      element.style.transition = 'box-shadow 2s ease-in-out 0.02s';
+      element.style.boxShadow = '0px 0px 6px 4px rgba(237, 35, 247)';
+  });
+},2000);
+
+setInterval((ele)=>{
+  elements.forEach(element => {
+      element.style.boxShadow = '0px 0px 6px 4px rgb(35, 247, 215)';
+  });
+},4000);
+
+</script>
+
+<script>
+  const navLinks = document.querySelectorAll('.nav-link');
+  const navbar = document.querySelector(".offcanvas");
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+      const targetSection = document.getElementById(event.target.getAttribute('href').slice(1));
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+      navbar.classList.toggle('show');
+    });
+  });
+</script>
+
+
+<script>
+  function downloadPDF() {
+    const pdfURL = 'HemantKumar.pdf';
+    
+    const a = document.createElement('a');
+    a.href = pdfURL;
+    a.download = 'document.pdf'; 
+    document.body.appendChild(a);
+    a.click();
+    
+    document.body.removeChild(a);
+  }
+  </script>
