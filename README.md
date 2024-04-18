@@ -61,7 +61,7 @@ You can view my resume https://drive.google.com/file/d/1wcRWJUqld3_IviLOby2wJ_Pd
 
 ## Deployment
 
-The website is deployed using [Render](https://www.heroku.com/) Continuous deployment is set up to automatically deploy changes pushed to the main branch.
+The website is deployed using [Render](https://myportfolio-e8i3.onrender.com/home) Continuous deployment is set up to automatically deploy changes pushed to the main branch.
 
 ## Feedback
 
